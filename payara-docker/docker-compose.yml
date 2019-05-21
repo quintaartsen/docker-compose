@@ -1,0 +1,11 @@
+version: '3'
+services:
+    payara:
+        image: 'payara/server-full' 
+        ports:
+            - "4848:4848"
+            - "8080:8080"
+            - "56505:56505"
+        volumes:
+            - ./apps:/opt/payara/apps
+            - ./logs:/logs
