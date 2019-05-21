@@ -1,0 +1,11 @@
+phpmyadmin:
+  image: phpmyadmin/phpmyadmin
+  environment:
+    PMA_HOST: cyberq.nl
+    PMA_PORT: 3306
+  ports:
+    - '8081:80'
+datastore:
+  image: busybox
+  volumes:
+    - /var/lib/mysql
