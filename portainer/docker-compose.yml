@@ -5,6 +5,6 @@ services:
     build: .
     restart: unless-stopped
     ports:
-      - "9001:9001"
+      - "9001:9000"
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
