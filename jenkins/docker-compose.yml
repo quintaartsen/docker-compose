@@ -8,3 +8,23 @@ services:
     volumes:
       - /jenkins-home:/var/jenkins_home
       - /var/run/docker.sock:/var/run/docker.sock
+    
+  jenkins-docker:
+    container_name: jenkins-docker
+    build: jenkins-docker-slave
+    restart: unless-stopped
+    ports:
+        - 8081:8080
+    volumes:
+      - /jenkins-home:/var/jenkins_home
+      - /var/run/docker.sock:/var/run/docker.sock
+    
+  jenkins-nodejs:
+    container_name: jenkins-nodejs
+    build: jenkins-nodejs-slave
+    restart: unless-stopped
+    ports:
+        - 8082:8080
+    volumes:
+      - /jenkins-home:/var/jenkins_home
+      - /var/run/docker.sock:/var/run/docker.socks
