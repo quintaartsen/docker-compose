@@ -6,7 +6,7 @@ services:
     ports:
       - "8080:8080"
     volumes:
-      - /jenkins-home:/var/jenkins_home
+      - ./jenkins-home:/var/jenkins_home
       - /var/run/docker.sock:/var/run/docker.sock
     
   jenkins-docker:
@@ -16,7 +16,7 @@ services:
     ports:
         - 8081:8080
     volumes:
-      - /jenkins-home:/var/jenkins_home
+      - ./jenkins-home2:/var/jenkins_home
       - /var/run/docker.sock:/var/run/docker.sock
     
   jenkins-nodejs:
@@ -26,5 +26,5 @@ services:
     ports:
         - 8082:8080
     volumes:
-      - /jenkins-home:/var/jenkins_home
+      - ./jenkins-home3:/var/jenkins_home
       - /var/run/docker.sock:/var/run/docker.socks
