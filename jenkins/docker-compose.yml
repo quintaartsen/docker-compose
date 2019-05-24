@@ -1,6 +1,7 @@
 version: '3'
 services:
   jenkins:
+    user: root
     image: jenkins/jenkins:latest
     restart: unless-stopped
     ports:
@@ -10,6 +11,7 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
     
   jenkins-docker:
+    user: root
     container_name: jenkins-docker
     build: jenkins-docker-slave
     restart: unless-stopped
@@ -20,6 +22,7 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
     
   jenkins-nodejs:
+    user: root
     container_name: jenkins-nodejs
     build: jenkins-nodejs-slave
     restart: unless-stopped
