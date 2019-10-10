@@ -133,8 +133,13 @@
     $window.on('scroll', function () {
         if ($window.scrollTop() > 48) {
             $('.header_area').addClass('sticky slideInDown');
+            $('.logoimg').addClass('logosmall');
+            $('.logoimg').removeClass('logobig');
+
         } else {
             $('.header_area').removeClass('sticky slideInDown');
+            $('.logoimg').removeClass('logosmall');
+            $('.logoimg').addClass('logobig');
         }
     });
 

@@ -1296,3 +1296,12 @@ p {
 .copyright-text > p {
     margin-bottom: 0;
 }
+
+.logobig {
+    height: 100px;
+    width: auto;
+}
+.logosmall {
+    height: 65px;
+    width: auto;
+}
