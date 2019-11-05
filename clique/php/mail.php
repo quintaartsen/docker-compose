@@ -20,10 +20,10 @@ $mail = new PHPMailer;
 $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'socialclique.nl';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'info@socialclique.com';                 // SMTP username
+$mail->Username = 'info@socialclique.nl';                 // SMTP username
 $mail->Password = 'jk2dbqs4';                           // SMTP password
 
-$mail->From = 'info@socialclique.com';
+$mail->From = 'info@socialclique.nl';
 $mail->FromName = 'website';
 $mail->addAddress('info@socialclique.nl', 'info');     // Add a recipient
 
