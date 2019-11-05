@@ -1,6 +1,11 @@
 <?php 
-require("mail/PHPMailer.php");
-require("mail/SMTP.php");
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require 'mail/Exception.php';
+require 'mail/PHPMailer.php';
+require 'mail/SMTP.php';
+
 
 $name = $_POST['name'];
 $email = $_POST['email'];
