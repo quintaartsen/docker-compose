@@ -22,8 +22,8 @@ $mail->Host = 'socialclique.nl';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
 $mail->Username = 'info@socialclique.nl';                 // SMTP username
 $mail->Password = 'jk2dbqs4';
-$mail->Port = 25;                           // SMTP password
-
+$mail->Port = 25;
+$mail->SMTPAutoTLS = false; 
 $mail->From = 'info@socialclique.nl';
 $mail->FromName = 'website';
 $mail->addAddress('info@socialclique.nl', 'info');     // Add a recipient
