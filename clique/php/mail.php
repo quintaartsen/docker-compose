@@ -21,7 +21,8 @@ $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'socialclique.nl';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
 $mail->Username = 'info@socialclique.nl';                 // SMTP username
-$mail->Password = 'jk2dbqs4';                           // SMTP password
+$mail->Password = 'jk2dbqs4';
+$mail->Port = 25;                           // SMTP password
 
 $mail->From = 'info@socialclique.nl';
 $mail->FromName = 'website';
