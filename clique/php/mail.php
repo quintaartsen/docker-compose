@@ -1,5 +1,6 @@
 <?php 
-include "mail/PHPMailer.php";
+require("mail/PHPMailer.php");
+require("mail/SMTP.php");
 
 $name = $_POST['name'];
 $email = $_POST['email'];
