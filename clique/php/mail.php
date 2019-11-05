@@ -1,5 +1,5 @@
 <?php 
-include "/mail/PHPMailer";
+include "mail/PHPMailer.php";
 
 $name = $_POST['name'];
 $email = $_POST['email'];
