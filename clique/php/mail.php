@@ -1,4 +1,5 @@
 <?php 
+include "index.html";
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
@@ -17,7 +18,7 @@ $subject = "Contact Form";
 $mail = new PHPMailer;
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = 'smtp.socialclique.nl';  // Specify main and backup SMTP servers
+$mail->Host = 'socialclique.nl';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
 $mail->Username = 'info@socialclique.com';                 // SMTP username
 $mail->Password = 'jk2dbqs4';                           // SMTP password
@@ -39,6 +40,4 @@ if(!$mail->send()) {
     echo 'Message has been sent';
 }
 
-header("Location: http://socialclique.nl");
-die();
 ?>
