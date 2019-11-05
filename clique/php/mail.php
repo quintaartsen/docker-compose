@@ -24,7 +24,6 @@ $mail->Username = 'admin@socialclique.nl';                 // SMTP username
 $mail->Password = 'jk2dbqs4';
 $mail->Port = 25;
 $mail->SMTPAutoTLS = false; 
-$mail->SMTPDebug = 2;
 
 $mail->From = 'info@socialclique.nl';
 $mail->FromName = 'website';
