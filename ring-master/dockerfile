@@ -1,0 +1,9 @@
+FROM node:10.9 
+
+COPY ./ ./
+
+RUN npm 
+
+WORKDIR /angular
+
+RUN npm run stream-example
